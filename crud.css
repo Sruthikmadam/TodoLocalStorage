@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: rgb(40, 48, 52);
+   
+}
+.form-container{
+    margin-top: 20px;
+    width: 40vw;
+    border-radius: 20px;
+    
+    padding: 30px;
+    background-color: rgb(212, 212, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height:60vh;
+    margin-top: 50px;
+    overflow-Y: scroll; 
+    
+    padding-top: 10px; /* Add padding equal to or greater than the sticky header height */
+    padding: 15px;
+
+
+    
+}
+
+
+
+
+form input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+form button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.add-div{
+    width: 100%;
+    padding:0px 90px ;
+    /* position: sticky;
+    top: 0; */
+    text-align: center;
+
+}
+.add-div button{
+    padding:6px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+.add-div button:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.create-form{
+   
+    position: sticky;
+    top:0; 
+    /* position:absolute; */
+}
+.update-form,.create-form{
+    display: none;
+}table button{
+
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+table .edit{
+    background-color: burlywood;
+    color: white;
+
+}
+table .delete{
+    background-color: rgb(180, 104, 17);
+    color: white;
+}
+.head{
+    color:rgb(24, 133, 42);
+            position: sticky;
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Keep it above other elements */
+            height: 70px;   
+            font-size: 30px;
+
+}

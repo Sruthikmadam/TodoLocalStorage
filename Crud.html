@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Management</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body onLoad="readall()">
+    <div class="container">
+        <div class="add-div">
+            <button type="button" onClick="create()">Add Task</button>
+        </div>
+        <form class="update-form">
+
+            <input type="text" hidden class="id"/>
+            <input type="text" class="utask"/>
+            <input type="date" class="udate"/>
+            <button type="button" onClick="update()">Update</button>
+        </form>
+        <!-- <div class="form-container"> -->
+            <form class="create-form">
+               
+                <input type="text" class="task" placeholder="Enter task"/>
+                <input type="date" class="date" placeholder="Enter due date"/>
+                <button  type="button" onClick="add()">Create</button>
+            </form>
+            <!-- <table>
+                <thead class="head">
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Action</th></thead>
+                    </table> -->
+            <div class="form-container">
+            <!-- <form class="update-form">
+
+                <input type="text" hidden class="id"/>
+                <input type="text" class="uname"/>
+                <input type="date" class="udate"/>
+                <button type="button" onClick="update()">Update</button>
+            </form> -->
+            <!-- <div class="add-div">
+                <button type="button" onClick="create()">Add Task</button>
+            </div> -->
+            <!-- <table> -->
+                <table>
+                    <thead class="head">
+                        <th>Task</th>
+                        <th>Due Date</th>
+                        <th>Action</th></thead>
+                <tbody class="data-table">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./crud.js"></script>
+    
+</body>
+</html>
